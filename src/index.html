@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/output.css" />
+    <script defer src="script.js"></script>
+    <title>Share-Link</title>
+  </head>
+
+  <body class="bg-[#1b1e36] flex justify-center items-center min-h-screen p-2">
+    <div
+      class="sm:w-[28rem] bg-[#242547] rounded-lg pt-12 px-5 sm:px-8 pb-8 text-slate-100"
+    >
+      <h1 class="text-lg font-medium mb-4">Follow us!</h1>
+
+      <div class="flex item-center gap-4 box mb-6">
+        <!-- 1 -->
+        <div
+          class="w-12 h-12 bg-[#30335b] rounded-lg flex items-center justify-center cursor-pointer content shadow-xl shadow-transparent"
+          data-tab="https://twitter.com/iCodeThis"
+        >
+          <ion-icon name="logo-twitter" class="w-9 h-9"></ion-icon>
+        </div>
+        <!-- 2 -->
+        <div
+          class="w-12 h-12 bg-[#30335b] rounded-lg flex items-center justify-center cursor-pointer content shadow-xl shadow-transparent"
+          data-tab="http://discord.gg/wrFuatUx7f"
+        >
+          <ion-icon name="logo-discord" class="w-9 h-9"></ion-icon>
+        </div>
+        <!-- 3 -->
+        <div
+          class="w-12 h-12 bg-[#30335b] rounded-lg flex items-center justify-center cursor-pointer content shadow-xl shadow-[#ec4c86]/30 bg-[#ec4c86]"
+          data-tab="https://www.icodethis.com/app"
+        >
+          <ion-icon name="globe-outline" class="w-9 h-9"></ion-icon>
+        </div>
+        <!-- 4 -->
+        <div
+          class="w-12 h-12 bg-[#30335b] rounded-lg flex items-center justify-center cursor-pointer content shadow-xl shadow-transparent"
+          data-tab="https://www.icodethis.com/app"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-9 h-9"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M3 18v-12h4.5a3 3 0 0 1 0 6a3 3 0 0 1 0 6h-4.5"></path>
+            <path d="M3 12l4.5 0"></path>
+            <path d="M14 13h7a3.5 3.5 0 0 0 -7 0v2a3.5 3.5 0 0 0 6.64 1"></path>
+            <path d="M16 6l3 0"></path>
+          </svg>
+        </div>
+      </div>
+
+      <span class="text-sm mt-4 inline-block">Or share the page</span>
+
+      <div
+        class="mt-2 py-4 px-2 sm:px-3 bg-[#1b1e36] rounded-lg flex item-center sm:justify-between gap-2 flex-col sm:flex-row"
+      >
+        <span class="text-xs text-center link"
+          >https://www.icodethis.com/app</span
+        >
+
+        <button class="text-xs text-[#524f9e] font-medium copy">
+          Copy to clipboard
+        </button>
+      </div>
+    </div>
+
+    <div
+      class="bg-[#ec4c86] text-slate-100 py-4 px-6 rounded-lg font-medium absolute top-12 -translate-y-1/2 left-1/2 -translate-x-1/2 opacity-0 transition-all duration-500 -z-10 popup"
+    >
+      Copied
+    </div>
+
+    <div
+      class="overlay w-full h-full fixed top-0 left-0 bg-[#ec4c86]/20 transition-all duration-500 -z-10 -translate-y-1/2 opacity-0"
+    ></div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
